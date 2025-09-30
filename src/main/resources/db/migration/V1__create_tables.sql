@@ -4,6 +4,7 @@
 CREATE TABLE IF NOT EXISTS vet_salary (
     id          BIGSERIAL PRIMARY KEY,
     vet_id      BIGINT      NOT NULL UNIQUE,
+    vet_name    VARCHAR(255) NOT NULL,
     salary      NUMERIC(19,2) NOT NULL,
     created_at  TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );

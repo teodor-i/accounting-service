@@ -7,7 +7,7 @@ import java.math.BigDecimal
 import java.time.LocalDate
 
 @Table
-data class VetPayment (@Id val id: Long?,
+data class VetPayment (@Id val id: Long? = null,
                        @Column("payment_date") val date: LocalDate,
                        @Column("vet_id")val vetId: Long,
                        val amount: BigDecimal)

@@ -30,7 +30,6 @@ class VetWorkService(
         } else {
             // If no monthly payment exists, create a new one with calculated amount
             val newPayment = VetPayment(
-                id = null,
                 date = monthDate,
                 vetId = workInfo.vetId,
                 amount = increment
